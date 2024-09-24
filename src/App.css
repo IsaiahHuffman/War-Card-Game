@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  /*This doesn't really do anything admittedly */
+  #player1-card, #player2-card {
+    margin: 20px;
+  }
+
+  /* For the black table at the top */
+  table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            color: white;
+        }
+        th {
+            background-color: #2b2a2a;
+        }
+        tbody {
+            background-color: #2b2a2a;
+        }
+        .dynamic-row td {
+            background-color: #2b2a2a;
+        }
+        /* Align text in the first row to the left */
+        tr:first-child th {
+            text-align: left;
+        }
+
+        /*Formatting for the controls box which holds the 3 buttons */
+        .controls-container {
+            background-color: #e3e1e1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 90%; 
+            margin: 20px auto; 
+        }
+        .controls-header {
+            color: black;
+            background-color: #e3e1e1;
+            padding: 8px;
+            text-align: left;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+        }
+
+        /*Formatting for the 3 buttons */
+        .button-group {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .button-group button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #e3e1e1;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /*Darker shade when the cursor hovers over a button*/
+        .button-group button:hover {
+            background-color: #c4c1c0; 
+        }
+
+        .button-container {
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+            padding: 8px;
+        }
+
+        /*Player card*/
+        .ui-card{
+          text-align: center;
+        }
+        
+        #playerTitle{
+          text-align: center;
+        }
+        #player1-wins{
+          text-align: center;
+        }
+        #player2-wins{
+          text-align: center;
+        }
+        /*Player scores at the bottom*/
+        #scores {
+    text-align: left;
+}
+
+
